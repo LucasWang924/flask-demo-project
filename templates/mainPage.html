@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>TestPage</title>
+  </head>
+  <body>
+    <h1>縮址服務</h1>
+    <ul>
+      <li>取得短網址</li>
+      <li>
+        <form action="/makeItShorter" method="post">
+          <label for="targetURL">請輸入網址：</label>
+          <input type="text" name="targetURL" value="EX. https://www.google.com">
+          <input type="submit" value="Submit">
+        </form>
+      </li>
+    </ul>
+    <ul>
+      <li>預覽短網址</li>
+      <li>
+        <form action="/previewURL" method="post">
+          <label for="previewURL">請輸入短網址：</label>
+          <input type="text" name="previewURL" value="">
+          <input type="submit" value="Submit">
+        </form>
+      </li>
+    </ul>
+  </body>
+</html>

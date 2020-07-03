@@ -17,15 +17,6 @@ def getMaxID():
 
 @app.route('/')
 def index():
-    conn = getSqliteConnection()
-    c = conn.cursor()
-    # cursor = c.execute("DELETE from URLTable")
-    cursor = c.execute("SELECT * from URLTable")
-    for row in cursor:
-        print(row)
-
-    # conn.commit()
-    conn.close()
     return render_template("mainPage.html")
 
 def saveURLtoDB(url):

@@ -104,6 +104,7 @@ def getURLfromShortURL(previewURL):
     url = ''
     if data:
         url = data[0]
+    print("url = %s" % url)
     return url
 
 
@@ -112,7 +113,10 @@ def redirectTo(url_key):
     if url_key in ["previewURL", "makeItShorter", "/", "favicon.ico"]:
         return '', 204
     url = getURLfromShortURL(url_key)
-    return redirect(url)
+    if url:
+        return redirect(url)
+    else:
+        return "找不到這個短網址的目標網址"
 
 if __name__ == "__main__":
     app.run()

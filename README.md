@@ -8,7 +8,7 @@ https://flask-demo-project.herokuapp.com/
 * 前端頁面 - templates/MainPage
 * 後面API Service - main.py
 * Heroku 平台設定檔 - Procfile & requirements.txt
-* Sqlite Datebase - test.db
+* Sqlite Database - test.db
 
 ## 前端介面
 **由兩個表單構成**
